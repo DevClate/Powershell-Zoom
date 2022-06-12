@@ -1,0 +1,7 @@
+#Zoom Teams Edit for teams as of 6/11/2022
+$ZoomRoom = Read-Host "Input Zoom Room Email"
+
+#Connect to Exchange Online
+Connect-ExchangeOnline -UserPrincipalName credentials@domain.com
+
+Set-CalendarProcessing -Identity $ZoomRoom -AddOrganizerToSubject $false -OrganizerInfo $true -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
