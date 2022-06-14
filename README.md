@@ -1,2 +1,2 @@
 # Powershell-Zoom
-Powershell scrips and one liners for Zoom
+Powershell scripts and one liners for Zoom
